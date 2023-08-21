@@ -1,3 +1,276 @@
-h1 {
-    color: red;
+:root {
+    --violet: #6725A8;
+    --black: #000;
+    --white: #fff;
+    --white45: rgba(255, 255, 255, 0.45);
+    --white20: rgba(255, 255, 255, 0.20);
+    --orange: #F55123;
+    --gray: #A0A0A4;
+    --smoky: #F6F6FA;
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Segoe UI"),
+         url("/fonts/Segoe\ UI.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Segoe UI"),
+         url("/fonts/Segoe\ UI\ Bold.ttf") format("ttf");
+}
+
+* {
+    font-family: 'Segoe UI';
+}
+
+.wrapper {
+    background: var(--violet);
+}
+
+.container {
+    padding: 15px 25px;
+    max-width: 1024px;
+    display: flex;
+    margin: auto;
+}
+
+button {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.header__container {
+    justify-content: space-between;
+}
+
+.header__btn {
+    background: url('./images/icons/burger.svg') center center no-repeat;
+    border-radius: 8px;
+    border: 1px solid var(--white45);
+    width: 48px;
+    height: 48px;
+}
+
+.header__logo {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.56px;
+    color: var(--white);
+    font-variant: all-small-caps;
+}
+
+.header__search {
+    background: var(--white20);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 36px;
+    width: 50%;
+}
+
+.header__search::placeholder {
+    color: var(--white);
+    opacity: 0.5;
+}
+
+.header__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.header__link .link__img {
+    margin-bottom: 7px;
+}
+
+.basket {
+    background: var(--smoky);
+    border-radius: 24px;
+}
+
+.content__title {
+    color: var(--black);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.28px;
+}
+
+.goods__accordion {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Checkbox custom */
+
+.check {
+    padding-left: 30px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.check__input  {
+    appearance: none;
+}
+
+.check__box {
+    position: absolute;
+    left: 0;
+    background-image: url('./images/icons/checkbox.svg');
+    width: 22px;
+    height: 22px;
+}
+
+.check__input:focus + .check__box {
+    background-image: url('./images/icons/checkbox-focused.svg');
+}
+
+.check__input:checked + .check__box {
+    background-image: url('./images/icons/checkbox-checked.svg');
+}
+
+.goods__hide-btn {
+    background-image: url('./images/icons/arrow-top.svg');
+    width: 20px;
+    height: 20px;
+}
+
+.goods__products {
+    display: flex;
+    flex-direction: column;
+}
+
+.products__product {
+    display: flex;
+    padding-top: 12px;
+}
+
+.product__title {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.product__img {
+    height: 100%;
+}
+
+.product__additional {
+    display: flex;
+}
+
+.product__text {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    margin: 0 0 8px 0;
+}
+
+.product__additional .product__text:first-child {
+    margin-right: 16px;
+}
+
+.product__company-row {
+    display: flex;
+    align-items: center;
+}
+
+.product__company .product__text {
+    color: var(--gray);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.product__company-row .product__text {
+    margin-bottom: 0;
+}
+
+.product__button {
+    margin-left: 6px;
+}
+
+.product__action {
+    display: flex;
+    flex-direction: column;
+}
+
+.action__count {
+    display: flex;
+    background: var(--white);
+}
+
+.count__text {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.count__btn {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+.action__text {
+    margin: 0 0 8px 0;
+    color: var(--orange);
+}
+
+.action__row {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.action__row .action__btn:first-child {
+    margin-right: 16px;
+}
+
+.product__total {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.total__price-sale {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+    margin: 0 0 6px 0;
+}
+
+.total__price-sale span {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.total__price {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    color: var(--gray);
+    text-decoration: line-through;
+    margin: 0;
 }
