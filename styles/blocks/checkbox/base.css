@@ -1,0 +1,29 @@
+/* Checkbox */
+
+.check {
+    padding-left: 30px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.check__input  {
+    appearance: none;
+}
+
+.check__box {
+    position: absolute;
+    left: 0;
+    background-image: url('/images/icons/checkbox.svg');
+    width: 22px;
+    height: 22px;
+}
+
+.check__input:focus + .check__box {
+    background-image: url('/images/icons/checkbox-focused.svg');
+}
+
+.check__input:checked + .check__box {
+    background-image: url('/images/icons/checkbox-checked.svg');
+}

@@ -1,0 +1,19 @@
+/* Basket */
+
+.basket {
+    background: var(--smoky);
+    border-radius: 24px;
+    width: 100%;
+}
+
+.basket__container {
+    padding: 15px 25px;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.basket__content {
+    width: 70%;
+}

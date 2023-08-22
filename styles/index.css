@@ -1,0 +1,14 @@
+@import url(./global/box-model.css);
+@import url(./colors.css);
+@import url(/fonts/stylesheet.css);
+
+/* Blocks */
+@import url(./blocks/page/index.css);
+@import url(./blocks/header/index.css);
+@import url(./blocks/checkbox/index.css);
+@import url(./blocks/basket/index.css);
+@import url(./blocks/content/index.css);
+@import url(./blocks/goods/index.css);
+@import url(./blocks/products/index.css);
+@import url(./blocks/product/index.css);
+@import url(./blocks/total/index.css);

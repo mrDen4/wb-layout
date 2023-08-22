@@ -1,51 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="/fonts/stylesheet.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/index.css">
     <title>Товары и точка</title>
 </head>
-<body>
-    <div class="wrapper">
-        <header class="header">
-            <div class="container header__container">
-                <button class="header__btn"></button>
-                <div class="header__logo">Товары <br> и точка</div>
-                <input type="text" class="header__search" placeholder="Я ищу...">
-                <a href="#" class="header__link">
-                    <img src="./images/icons/user.svg" alt="Профиль" class="link__img">
-                    Профиль
-                </a>
-                <a href="#" class="header__link">
-                    <img src="./images/icons/basket.svg" alt="Корзина" class="link__img">
-                    Корзина
-                </a>
-            </div>
-        </header>
-        <section class="basket">
-            <div class="container basket__container">
-                <div class="basket__content">
-                    <h1 class="content__title">Корзина</h1>
-                    <div class="content__goods">
-                        <div class="goods__accordion">
-                            <label class="check goods__check">
+<body class="page__body">
+    <header class="header">
+        <div class="header__container">
+            <button class="header__menu-btn">
+                <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 2C0 0.895431 0.895431 0 2 0H26C27.1046 0 28 0.895431 28 2C28 3.10457 27.1046 4 26 4H2C0.895431 4 0 3.10457 0 2Z" fill="white"/>
+                    <path d="M0 12C0 10.8954 0.895431 10 2 10H26C27.1046 10 28 10.8954 28 12C28 13.1046 27.1046 14 26 14H2C0.895431 14 0 13.1046 0 12Z" fill="white"/>
+                    <path d="M0 22C0 20.8954 0.895431 20 2 20H26C27.1046 20 28 20.8954 28 22C28 23.1046 27.1046 24 26 24H2C0.895431 24 0 23.1046 0 22Z" fill="white"/>
+                </svg>
+            </button>
+            <div class="header__logo">Товары <br> и точка</div>
+            <input type="text" class="header__search" placeholder="Я ищу...">
+            <a href="#" class="header__link">
+                <img src="./images/icons/user.svg" alt="Профиль">
+                Профиль
+            </a>
+            <a href="#" class="header__link">
+                <img src="./images/icons/basket.svg" alt="Корзина">
+                Корзина
+            </a>
+        </div>
+    </header>
+    <main class="basket">
+        <div class="basket__container">
+            <div class="basket__content content">
+                <h1 class="content__title">Корзина</h1>
+                <div class="content__goods goods">
+                    <div class="goods__accordion">
+                        <label class="goods__check check">
+                            <input type="checkbox" class="check__input">
+                            <span class="check__box"></span>
+                            Выбрать все
+                        </label>
+                        <button class="goods__hide-btn"></button>
+                    </div>
+                    <ul class="goods__products products">
+                        <li class="products__product product">
+                            <label class="product__check check">
                                 <input type="checkbox" class="check__input">
                                 <span class="check__box"></span>
-                                Выбрать все
                             </label>
-                            <button class="goods__hide-btn"></button>
-                        </div>
-                        <ul class="goods__products">
-                            <li class="products__product">
-                                <label class="check product__check">
-                                    <input type="checkbox" class="check__input">
-                                    <span class="check__box"></span>
-                                </label>
-                                <img src="./images/products/1.jpg" alt="Товар 1" class="product__img">
-                                <div class="product__info">
+                            <div class="product__info">
+                                <img src="./images/products/1.jpg" alt="Товар 1" class="product__info-img">
+                                <div class="product__info-about"> 
                                     <h3 class="product__title">Футболка UZcotton мужская</h3>
                                     <div class="product__additional">
                                         <p class="product__text">Цвет: белый</p>
@@ -59,276 +63,196 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product__action">
-                                    <div class="action__count">
-                                        <button class="count__btn">-</button>
-                                        <p class="count__text">1</p>
-                                        <button class="count__btn">+</button>
-                                    </div>
-                                    <p class="action__text">Осталось 2 шт.</p>
-                                    <div class="action__row">
-                                        <button class="action__btn"><img src="./images/icons/like.svg" alt="Добавить в избранное"></button>
-                                        <button class="action__btn"><img src="./images/icons/trash.svg" alt="Удалить из корзины"></button>
-                                    </div>
+                            </div>
+                            <div class="product__action">
+                                <div class="product__action-count">
+                                    <button class="product__action-count-btn">-</button>
+                                    <p class="product__action-count-text">1</p>
+                                    <button class="product__action-count-btn">+</button>
                                 </div>
-                                <div class="product__total">
-                                    <p class="total__price-sale">522 <span>сом</span></p>
-                                    <p class="total__price">1051 сом</p>
+                                <p class="product__action-text">Осталось 2 шт.</p>
+                                <div class="product__action-row">
+                                    <button class="product__action-btn"><img src="./images/icons/like.svg" alt="Добавить в избранное"></button>
+                                    <button class="product__action-btn"><img src="./images/icons/trash.svg" alt="Удалить из корзины"></button>
                                 </div>
-                            </li>
-                            <li class="products__product">
-                                <input type="checkbox" class="checkbox product__checkbox" name="" id="">
-                                <img src="./images/products/1.jpg" alt="Товар 1" class="product__img">
-                                <div class="product__info">
-                                    <h3 class="product__title">Футболка UZcotton мужская</h3>
-                                    <div class="product__additional">
-                                        <p class="product__text">Цвет: белый</p>
-                                        <p class="product__text">Размер: 56</p>
-                                    </div>
-                                    <div class="product__company">
-                                        <p class="product__text product__text--company">Коледино WB</p>
-                                        <p class="product__text product__text--company">OOO Вайлдберриз</p>
-                                        <button class="prtoduct__button"><img src="./images/icons/info.svg" alt="информация"></button>
-                                    </div>
-                                </div>
-                                <div class="product__action">
-                                    <div class="action__count">
-                                        <button class="count__btn">-</button>
-                                        <p class="count__text">1</p>
-                                        <button class="count__btn">+</button>
-                                    </div>
-                                    <p class="action__text action__text--left">Осталось 2 шт.</p>
-                                    <button class="action__btn"><img src="./images/icons/like.svg" alt="Добавить в избранное"></button>
-                                    <button class="action__btn"><img src="./images/icons/trash.svg" alt="Удалить из корзины"></button>
-                                </div>
-                                <div class="product__total">
-                                    <p class="total__price-sale">522 сом</p>
-                                    <p class="total__price">1051 сом</p>
-                                </div>
-                            </li>
-                            <li class="products__product">
-                                <input type="checkbox" class="checkbox product__checkbox" name="" id="">
-                                <img src="./images/products/1.jpg" alt="Товар 1" class="product__img">
-                                <div class="product__info">
-                                    <h3 class="product__title">Футболка UZcotton мужская</h3>
-                                    <div class="product__additional">
-                                        <p class="product__text">Цвет: белый</p>
-                                        <p class="product__text">Размер: 56</p>
-                                    </div>
-                                    <div class="product__company">
-                                        <p class="product__text product__text--company">Коледино WB</p>
-                                        <p class="product__text product__text--company">OOO Вайлдберриз</p>
-                                        <button class="prtoduct__button"><img src="./images/icons/info.svg" alt="информация"></button>
-                                    </div>
-                                </div>
-                                <div class="product__action">
-                                    <div class="action__count">
-                                        <button class="count__btn">-</button>
-                                        <p class="count__text">1</p>
-                                        <button class="count__btn">+</button>
-                                    </div>
-                                    <p class="action__text action__text--left">Осталось 2 шт.</p>
-                                    <button class="action__btn"><img src="./images/icons/like.svg" alt="Добавить в избранное"></button>
-                                    <button class="action__btn"><img src="./images/icons/trash.svg" alt="Удалить из корзины"></button>
-                                </div>
-                                <div class="product__total">
-                                    <p class="total__price-sale">522 сом</p>
-                                    <p class="total__price">1051 сом</p>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="goods__accordion">
-                            <h3 class="goods__title">Отсутствуют · 3 товара</h3>
-                            <button class="goods__hide-btn"></button>
-                        </div>
-                        <ul class="goods__products goods__products--missing">
-                            <li class="products__product">
-                                <img src="./images/products/1.jpg" alt="Товар 1" class="product__img">
-                                <div class="product__info">
-                                    <h3 class="product__title">Футболка UZcotton мужская</h3>
-                                    <div class="product__additional">
-                                        <p class="product__text">Цвет: белый</p>
-                                        <p class="product__text">Размер: 56</p>
-                                    </div>
-                                </div>
-                                <div class="product__action">
-                                    <button class="action__btn"><img src="./images/icons/like.svg" alt="Добавить в избранное"></button>
-                                    <button class="action__btn"><img src="./images/icons/trash.svg" alt="Удалить из корзины"></button>
-                                </div>
-                            </li>
-                            <li class="products__product">
-                                <img src="./images/products/1.jpg" alt="Товар 1" class="product__img">
-                                <div class="product__info">
-                                    <h3 class="product__title">Футболка UZcotton мужская</h3>
-                                    <div class="product__additional">
-                                        <p class="product__text">Цвет: белый</p>
-                                        <p class="product__text">Размер: 56</p>
-                                    </div>
-                                </div>
-                                <div class="product__action">
-                                    <button class="action__btn"><img src="./images/icons/like.svg" alt="Добавить в избранное"></button>
-                                    <button class="action__btn"><img src="./images/icons/trash.svg" alt="Удалить из корзины"></button>
-                                </div>
-                            </li>
-                            <li class="products__product">
-                                <img src="./images/products/1.jpg" alt="Товар 1" class="product__img">
-                                <div class="product__info">
-                                    <h3 class="product__title">Футболка UZcotton мужская</h3>
-                                    <div class="product__additional">
-                                        <p class="product__text">Цвет: белый</p>
-                                        <p class="product__text">Размер: 56</p>
-                                    </div>
-                                </div>
-                                <div class="product__action">
-                                    <button class="action__btn"><img src="./images/icons/like.svg" alt="Добавить в избранное"></button>
-                                    <button class="action__btn"><img src="./images/icons/trash.svg" alt="Удалить из корзины"></button>
-                                </div>
-                            </li>
-                        </ul>
+                            </div>
+                            <div class="product__total">
+                                <p class="product__total-price-sale">522 <span>сом</span></p>
+                                <p class="product__total-price">1051 сом</p>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                    <div class="goods__accordion">
+                        <h3 class="goods__title">Отсутствуют · 3 товара</h3>
+                        <button class="goods__hide-btn"></button>
                     </div>
-                    <div class="content__delivery">
-                        <div class="delivery__top">
-                            <h2 class="top__title">Способ доставки</h2>
-                            <button class="top__change">Изменить</button>
-                        </div>
-                        <ul class="delivery__list">
-                            <li class="delivery__item">
-                                <h3 class="item__title">Пункт выдачи</h3>
-                                <div class="item__info">
-                                    <p class="item__text">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
-                                    <p class="item__rating">4.99</p>
-                                    <p class="item__time">Ежедневно с 10 до 21 </p>
+                    <ul class="goods__products goods__products--missing products">
+                        <li class="products__product product">
+                            <label class="product__check check">
+                                <input type="checkbox" class="check__input">
+                                <span class="check__box"></span>
+                            </label>
+                            <div class="product__info">
+                                <img src="./images/products/1.jpg" alt="Товар 1" class="product__info-img">
+                                <div class="product__info-about"> 
+                                    <h3 class="product__title">Футболка UZcotton мужская</h3>
+                                    <div class="product__additional">
+                                        <p class="product__text">Цвет: белый</p>
+                                        <p class="product__text">Размер: 56</p>
+                                    </div>
                                 </div>
-                            </li>
-                            <li class="delivery__item">
-                                <h3 class="item__title">Стоимость доставки</h3>
-                                <div class="item__info">
-                                    <p class="item__text">Бесплатно</p>
+                            </div>
+                            <div class="product__action">
+                                <div class="product__action-row">
+                                    <button class="product__action-btn"><img src="./images/icons/like.svg" alt="Добавить в избранное"></button>
+                                    <button class="product__action-btn"><img src="./images/icons/trash.svg" alt="Удалить из корзины"></button>
                                 </div>
-                            </li>
-                            <li class="delivery__item">
-                                <h3 class="item__title">5—6 февраля</h3>
-                                <div class="item__info">
-                                    <ul class="item__products">
-                                        <li class="item__product">
-                                            <img src="./images/products/1.jpg" alt="1" class="item__img">
-                                        </li>
-                                        <li class="item__product">
-                                            <img src="./images/products/2.jpg" alt="2" class="item__img">
-                                            <div class="item__count">184</div>
-                                        </li>
-                                        <li class="item__product">
-                                            <img src="./images/products/3.jpg" alt="3" class="item__img">
-                                            <div class="item__count">2</div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="delivery__item">
-                                <h3 class="item__title">7—8 февраля</h3>
-                                <div class="item__info">
-                                    <ul class="item__products">
-                                        <li class="item__product">
-                                            <img src="./images/products/2.jpg" alt="2" class="item__img">
-                                            <div class="item__count">16</div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="delivery__return">
-                            <img src="./images/icons/checkbox.svg" alt="" class="return__img">
-                            <p class="return__text">Обратная доставка товаров на склад при отказе — <span>бесплатно</span></p>
-                            <div class="return__text-info">Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно</div>
-                        </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content__delivery">
+                    <div class="delivery__top">
+                        <h2 class="top__title">Способ доставки</h2>
+                        <button class="top__change">Изменить</button>
                     </div>
-                    <div class="content__payment">
-                        <div class="payment__top">
-                            <h2 class="top__title">Способ оплаты</h2>
-                            <button class="top__button">Изменить</button>
-                        </div>
-                        <div class="payment__about">
-                            <img src="./images/icons/mir.svg" alt="mir" class="about__img">
-                            <p class="about__card-number">1234 56•• •••• 1234</p>
-                            <p class="about__card-end">01/30</p>
-                            <p class="about__text">Спишем оплату с карты при получении</p>
-                        </div>
-                    </div>
-                    <div class="content__recipient">
-                        <h2 class="recipient__title">Получатель</h2>
-                        <form class="recipient__form">
-                            <input type="text" class="form__inp form__inp--name">
-                            <input type="text" class="form__inp form__inp--surname">
-                            <input type="text" class="form__inp form__inp--email">
-                            <input type="text" class="form__inp form__inp--phone">
-                            <input type="text" class="form__inp form__inp--inn">
-                        </form>
+                    <ul class="delivery__list">
+                        <li class="delivery__item">
+                            <h3 class="item__title">Пункт выдачи</h3>
+                            <div class="item__info">
+                                <p class="item__text">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
+                                <p class="item__rating">4.99</p>
+                                <p class="item__time">Ежедневно с 10 до 21 </p>
+                            </div>
+                        </li>
+                        <li class="delivery__item">
+                            <h3 class="item__title">Стоимость доставки</h3>
+                            <div class="item__info">
+                                <p class="item__text">Бесплатно</p>
+                            </div>
+                        </li>
+                        <li class="delivery__item">
+                            <h3 class="item__title">5—6 февраля</h3>
+                            <div class="item__info">
+                                <ul class="item__products">
+                                    <li class="item__product">
+                                        <img src="./images/products/1.jpg" alt="1" class="item__img">
+                                    </li>
+                                    <li class="item__product">
+                                        <img src="./images/products/2.jpg" alt="2" class="item__img">
+                                        <div class="item__count">184</div>
+                                    </li>
+                                    <li class="item__product">
+                                        <img src="./images/products/3.jpg" alt="3" class="item__img">
+                                        <div class="item__count">2</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="delivery__item">
+                            <h3 class="item__title">7—8 февраля</h3>
+                            <div class="item__info">
+                                <ul class="item__products">
+                                    <li class="item__product">
+                                        <img src="./images/products/2.jpg" alt="2" class="item__img">
+                                        <div class="item__count">16</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="delivery__return">
+                        <img src="./images/icons/checkbox.svg" alt="" class="return__img">
+                        <p class="return__text">Обратная доставка товаров на склад при отказе — <span>бесплатно</span></p>
+                        <div class="return__text-info">Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно</div>
                     </div>
                 </div>
-                <div class="basket__form">
-                    <div class="form__price">
-                        <div class="price__row price__row--sum">
-                            <p class="price__text">Итого</p>
-                            <p class="price__text">2 101 063 сом</p>
-                        </div>
-                        <div class="price__row">
-                            <p class="price__text">203 товара</p>
-                            <p class="price__text">2 302 048 сом</p>
-                        </div>
-                        <div class="price__row">
-                            <p class="price__text">Скидка</p>
-                            <p class="price__text">-200 985 сом</p>
-                        </div>
-                        <div class="price__row">
-                            <p class="price__text">Доставка</p>
-                            <p class="price__text">Бесплатно</p>
-                        </div>
+                <div class="content__payment">
+                    <div class="payment__top">
+                        <h2 class="top__title">Способ оплаты</h2>
+                        <button class="top__button">Изменить</button>
                     </div>
-                    <div class="form__item">
-                        <div class="item__top">
-                            <h3 class="top__title">Доставка в пункт выдачи</h3>
-                            <button class="top__change"></button>
-                        </div>
-                        <div class="item__info">
-                            <p class="info__text">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
-                            <p class="info__date">5–8 фев</p>
-                        </div>
-                        <div class="item__return">
-                            <p class="return__text">
-                                Обратная доставка товаров на склад при отказе — <span>бесплатно</span>
-                            </p>
-                            <div class="return__text-info">Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно</div>
-                        </div>
-                    </div>
-                    <div class="form__item">
-                        <div class="item__top">
-                            <h3 class="top__title">Оплата картой</h3>
-                            <button class="top__change"></button>
-                        </div>
-                        <div class="item__card">
-                            <img src="./images/icons/mir.svg" alt="mir" class="card__img">
-                            <p class="card__num">1234 12•• •••• 1234</p>
-                        </div>
-                        <div class="item__payment-info">
-                            <input type="checkbox" class="payment-info__inp">
-                            <p class="payment-info__text">Спишем оплату с карты при получении</p>
-                        </div>
-                    </div>
-                    <button class="form__btn">Заказать</button>
-                    <div class="form__rules">
-                        <input type="checkbox" name="" id="" class="rules__inp">
-                        <p class="rules__text">Соглашаюсь с правилами пользования торговой площадкой и возврата</p>
+                    <div class="payment__about">
+                        <img src="./images/icons/mir.svg" alt="mir" class="about__img">
+                        <p class="about__card-number">1234 56•• •••• 1234</p>
+                        <p class="about__card-end">01/30</p>
+                        <p class="about__text">Спишем оплату с карты при получении</p>
                     </div>
                 </div>
+                <div class="content__recipient">
+                    <h2 class="recipient__title">Получатель</h2>
+                    <form class="recipient__form">
+                        <input type="text" class="form__inp form__inp--name">
+                        <input type="text" class="form__inp form__inp--surname">
+                        <input type="text" class="form__inp form__inp--email">
+                        <input type="text" class="form__inp form__inp--phone">
+                        <input type="text" class="form__inp form__inp--inn">
+                    </form>
+                </div>
             </div>
-        </section>
-        <footer class="footer">
-            <div class="container footer__container">
-                <p class="footer__text">© 2022  ООО «Товары и точка»</p>
+            <div class="basket__total total">
+                <div class="form__price">
+                    <div class="price__row price__row--sum">
+                        <p class="price__text">Итого</p>
+                        <p class="price__text">2 101 063 сом</p>
+                    </div>
+                    <div class="price__row">
+                        <p class="price__text">203 товара</p>
+                        <p class="price__text">2 302 048 сом</p>
+                    </div>
+                    <div class="price__row">
+                        <p class="price__text">Скидка</p>
+                        <p class="price__text">-200 985 сом</p>
+                    </div>
+                    <div class="price__row">
+                        <p class="price__text">Доставка</p>
+                        <p class="price__text">Бесплатно</p>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="item__top">
+                        <h3 class="top__title">Доставка в пункт выдачи</h3>
+                        <button class="top__change"></button>
+                    </div>
+                    <div class="item__info">
+                        <p class="info__text">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
+                        <p class="info__date">5–8 фев</p>
+                    </div>
+                    <div class="item__return">
+                        <p class="return__text">
+                            Обратная доставка товаров на склад при отказе — <span>бесплатно</span>
+                        </p>
+                        <div class="return__text-info">Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно</div>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="item__top">
+                        <h3 class="top__title">Оплата картой</h3>
+                        <button class="top__change"></button>
+                    </div>
+                    <div class="item__card">
+                        <img src="./images/icons/mir.svg" alt="mir" class="card__img">
+                        <p class="card__num">1234 12•• •••• 1234</p>
+                    </div>
+                    <div class="item__payment-info">
+                        <input type="checkbox" class="payment-info__inp">
+                        <p class="payment-info__text">Спишем оплату с карты при получении</p>
+                    </div>
+                </div>
+                <button class="form__btn">Заказать</button>
+                <div class="form__rules">
+                    <input type="checkbox" name="" id="" class="rules__inp">
+                    <p class="rules__text">Соглашаюсь с правилами пользования торговой площадкой и возврата</p>
+                </div>
             </div>
-        </footer>
-    </div>
-    
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <p class="footer__text">© 2022  ООО «Товары и точка»</p>
+        </div>
+    </footer>
     <script src="./main.js"></script>
 </body>
 </html>

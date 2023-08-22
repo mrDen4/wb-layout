@@ -1,0 +1,14 @@
+/* Goods */
+
+.goods__accordion {
+    display: flex;
+    justify-content: space-between;
+}
+
+.goods__hide-btn {
+    background: none;
+    border: none;
+    background-image: url('/images/icons/arrow-top.svg');
+    width: 20px;
+    height: 20px;
+}

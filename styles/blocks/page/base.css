@@ -1,0 +1,12 @@
+/* Page */
+
+.page {
+    font-family: 'Segoe UI';
+    background: var(--violet);
+}
+
+/* Body */
+
+.page__body {
+    margin: 0;
+}
