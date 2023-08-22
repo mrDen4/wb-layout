@@ -1,3 +1,7 @@
+.content {
+    margin-right: 32px;
+}
+
 .content__title {
     color: var(--black);
     font-size: 28px;

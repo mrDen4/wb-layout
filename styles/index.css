@@ -12,3 +12,7 @@
 @import url(./blocks/products/index.css);
 @import url(./blocks/product/index.css);
 @import url(./blocks/total/index.css);
+@import url(./blocks/delivery/index.css);
+@import url(./blocks/payment/index.css);
+@import url(./blocks/recipient/index.css);
+@import url(./blocks/footer/index.css);

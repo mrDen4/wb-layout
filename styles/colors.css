@@ -2,9 +2,12 @@
     --violet: #6725A8;
     --black: #000;
     --white: #fff;
+    --white70: rgba(255, 255, 255, 0.70);
     --white45: rgba(255, 255, 255, 0.45);
     --white20: rgba(255, 255, 255, 0.20);
     --orange: #F55123;
     --gray: #A0A0A4;
     --smoky: #F6F6FA;
+    --magenta: #CB11AB;
+    --green: #0CB477;
 }

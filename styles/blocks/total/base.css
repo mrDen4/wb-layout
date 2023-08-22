@@ -1,3 +1,147 @@
 .total {
-    width: 28%;
+    width: 37%;
+    padding: 16px 24px 24px 24px;
+    background: var(--white);
+    border-radius: 16px;
+}
+
+.total__price {
+    margin-bottom: 24px;
+}
+
+.total__price-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.total__price-row--sum .price__text {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.24px;
+    margin: 0 0 9px 0;
+}
+
+.total__item-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.total__top-title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0;
+}
+
+.total__top-change {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.total__item-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.total__info-text {
+    font-size: 13px;
+    line-height: 16px;
+    margin: 0 0 4px 0;
+}
+
+.total__info-date {
+    color: var(--magenta);
+    border-bottom: 1px dotted rgba(203, 17, 171, 0.20);
+    margin: 0;
+}
+
+.total__item-return {
+    background: var(--smoky);
+    padding: 8px 8px 12px 8px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.total__return-text {
+    font-size: 13px;
+    line-height: 16px;
+    margin: 0 0 0 8px;
+}
+
+.total__return-text span {
+    color: var(--green);
+    border-bottom: 1px dotted rgba(12, 180, 119, 0.20);;
+}
+
+.total__return-text-info {
+    display: none;
+}
+
+.total__item-card {
+    display: flex;
+}
+
+.total__item-card img {
+    margin-right: 9px;
+}
+
+.total__card-num {
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.total__item-time {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 12px;
+    background: var(--smoky);
+    padding: 8px 8px 12px 8px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.total__item-check, .total__time-text {
+    font-size: 13px;
+    line-height: 16px; 
+}
+
+.total__time-text {
+    margin: 8px 0 0 0;
+}
+
+.total__order {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    background: var(--magenta);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 0;
+    height: 44px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.total__rules-check {
+    align-items: flex-start;
 }

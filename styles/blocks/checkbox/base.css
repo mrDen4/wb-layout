@@ -6,6 +6,9 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    min-height: 22px;
+    display: flex;
+    align-items: center;
 }
 
 .check__input  {
