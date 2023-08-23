@@ -3,7 +3,7 @@
 .goods__accordion {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .goods__hide-btn {
@@ -12,4 +12,11 @@
     background-image: url('/images/icons/arrow-top.svg');
     width: 20px;
     height: 20px;
+}
+
+.goods__title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0;
 }

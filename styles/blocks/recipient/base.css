@@ -11,7 +11,7 @@
     font-weight: 700;
     line-height: 32px;
     letter-spacing: -0.24px;
-    margin-bottom: 34px;
+    margin: 0 0 34px 0;
 }
 
 .recipient__form {

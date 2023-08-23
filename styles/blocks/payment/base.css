@@ -10,6 +10,8 @@
 .payment__top {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 15px;
 }
 
 .payment__top-title {
@@ -17,6 +19,7 @@
     font-weight: 700;
     line-height: 32px;
     letter-spacing: -0.24px;
+    margin: 0;
 }
 
 .payment__top-change {

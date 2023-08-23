@@ -1,5 +1,6 @@
 .content {
     margin-right: 32px;
+    width: 80%;
 }
 
 .content__title {
@@ -8,4 +9,5 @@
     font-weight: 700;
     line-height: 36px;
     letter-spacing: -0.28px;
+    margin-bottom: 25px;
 }
