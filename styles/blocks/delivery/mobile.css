@@ -1,0 +1,19 @@
+/* Mobile */
+
+@media (width < 1024px) {
+    .delivery__list-item {
+        flex-direction: column
+    }
+
+    .delivery__item-title {
+        width: 100%;
+    }
+
+    .delivery__item-info {
+        width: 100%;
+    }
+
+    .delivery__item-products {
+        margin-top: 12px;
+    }
+}

@@ -1,0 +1,13 @@
+/* Mobile */
+
+@media (width < 1024px) {
+    .total {
+        width: 100%;
+        background: none;
+    }
+
+    .total__item-return, .total__item-time {
+        background: var(--smoky-dark);
+    }
+
+}

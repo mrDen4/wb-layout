@@ -1,0 +1,128 @@
+/* Mobile */
+
+@media (width < 1024px) {
+    .product {
+        flex-wrap: wrap;
+        position: relative;
+        margin-bottom: 9px;
+        border-top: 1px solid #0000001A;
+        padding: 12px 0 0 0;
+    }
+
+    .product__check {
+        position: absolute;
+        z-index: 10;
+        top: 16px;
+        left: 4px;
+    }
+
+    .product__info {
+        width: 100%;
+        position: relative;
+        margin-bottom: 12px;
+    }
+
+    .product__total {
+        display: none;
+    }
+
+    .product__info .product__total {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        width: 100%;
+        align-items: center;
+    }
+
+    .product__info-img {
+        width: 80px;
+    }
+
+    .product__info .product__total-price-sale {
+        margin: 0 5px 2px 0;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .product__info .product__total-price {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .product__title {
+        font-size: 14px;
+        line-height: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+    }
+
+    .product__additional .product__text:first-child {
+        margin-right: 0;
+    }
+
+    .product__text-title {
+        display: none;
+    }
+
+    .product__text-size {
+        position: absolute;
+        bottom: 4px;
+        left: 4px;
+        background: var(--white);
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0 4px 0 4px;
+        border-radius: 6px;
+    }
+
+    .product__company-row {
+        display: none;
+    }
+
+    .product__action {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .product__action-count {
+        width: 81px;
+    }
+
+    .product__action-count-text {
+        padding: 3px 0;
+    }
+
+    .product__action-count-btn {
+        padding: 3px 8px;
+    }
+
+    .goods__products--missing .product {
+        margin-bottom: 16px;
+    }
+
+    .goods__products--missing .product__info {
+        margin-right: 0;
+    }
+
+    .goods__products--missing .product {
+        margin-bottom: 25px;
+    }
+
+    .goods__products--missing .product__action {
+        justify-content: end;
+    }
+
+    .goods__products--missing .product__info {
+        margin-bottom: 17px;
+    }
+
+    .goods__products--missing .product__action {
+        margin-right: 6px;
+    }

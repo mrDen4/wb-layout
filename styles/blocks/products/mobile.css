@@ -1,0 +1,9 @@
+/* Mobile */
+
+@media (width < 1024px) {
+    .products {
+        padding: 0;
+        border: none;
+        margin-bottom: 40px;
+    }
+}

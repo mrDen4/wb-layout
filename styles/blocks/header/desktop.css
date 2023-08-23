@@ -1,0 +1,15 @@
+/* Desktop */
+
+@media (width >= 1024px) {
+    .header__search-btn {
+        display: none;
+    }
+    
+    .header__menu-mobile-btn {
+        display: none;
+    }
+
+    .header__logo {
+        max-width: 105px;
+    }
+}

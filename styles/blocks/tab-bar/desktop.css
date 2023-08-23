@@ -1,7 +1,7 @@
 /* Desktop */
 
 @media (width >= 1024px) {
-    .product__info .product__total {
+    .tab-bar {
         display: none;
     }
 }

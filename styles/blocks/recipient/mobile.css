@@ -1,0 +1,7 @@
+/* Mobile */
+
+@media (width < 1024px) {
+    .recipient__form-inp {
+        width: 100%;
+    }
+}

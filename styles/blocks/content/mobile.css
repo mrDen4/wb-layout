@@ -1,0 +1,15 @@
+/* Mobile */
+
+@media (width < 1024px) {
+    .content {
+        width: 100%;
+        margin: 0;
+    }
+
+    .content__title {
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: -0.2px;
+        margin: 0 0 14px 0;
+    }
+}

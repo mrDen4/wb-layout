@@ -1,0 +1,33 @@
+/* Mobile */
+
+@media (width < 1024px) {
+    .header__menu-btn {
+        display: none;
+    }
+
+    .header__search {
+        display: none;
+    }
+
+    .header__link {
+        display: none;
+    }
+
+    .header__logo {
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 24px;
+        font-variant: all-small-caps;
+        letter-spacing: 0.52px;
+    }
+
+    .header__menu-mobile-btn, .header__search-btn {
+        border: none;
+        background: none;
+        padding: 0;
+    }
+
+    .header__container {
+        padding: 13px;
+    }
+}
