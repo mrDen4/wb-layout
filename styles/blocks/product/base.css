@@ -68,12 +68,6 @@
     margin-bottom: 0;
 }
 
-.product__button {
-    margin-left: 6px;
-    background: none;
-    border: none;
-}
-
 .product__action {
     display: flex;
     flex-direction: column;
@@ -162,6 +156,7 @@
     color: var(--gray);
     text-decoration: line-through;
     margin: 0;
+    border-bottom: 1px dashed var(--gray);
 }
 
 .goods__products--missing {
@@ -179,4 +174,16 @@
 
 .goods__products--missing .product__info-about {
     max-width: 310px;
+}
+
+.product__company-modal {
+    display: none;
+}
+
+.product__total-modal {
+    display: none;
+}
+
+.product__price {
+    display: flex;
 }

@@ -1,5 +1,32 @@
 /* Desktop */
 
 @media (width >= 1024px) {
+    .delivery__return-text-info {
+        display: none;
+        padding: 10px 16px 14px 16px;
+        font-size: 13px;
+        line-height: 16px;
+        position: absolute;
+        width: 288px;
+        bottom: -60px;
+        left: -110px;
+        background: var(--white);
+        filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.30)) drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.15));
+        border-radius: 8px;
+        color: var(--black);
+    }
 
+    .delivery__return-text {
+        display: flex;
+    }
+
+    .delivery__return-text-green {
+        position: relative;
+        margin-left: 4px;
+        cursor: pointer;
+    }
+
+    .delivery__return-text-green:hover .delivery__return-text-info {
+        display: flex;
+    }
 }

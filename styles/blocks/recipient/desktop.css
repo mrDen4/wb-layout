@@ -1,5 +1,11 @@
 /* Desktop */
 
 @media (width >= 1024px) {
+    .recipient__form-inp {
+        outline: none;
+    }
 
+    .recipient__form-inp:focus {
+        border-bottom: 1px solid var(--orange);
+    }
 }
