@@ -3,6 +3,6 @@
 @media (width < 1024px) {
     .basket__container {
         flex-direction: column;
-        padding: 15px 16px; 
+        padding: 0;
     }
 }

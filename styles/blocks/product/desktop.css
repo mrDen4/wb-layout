@@ -4,4 +4,9 @@
     .product__info .product__total {
         display: none;
     }
+
+    .product__action {
+        flex-direction: column;
+        width: initial;
+    }
 }

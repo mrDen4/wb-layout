@@ -1,5 +1,18 @@
 /* Mobile */
 
 @media (width < 1024px) {
-    
+    .payment {
+        padding: 16px 16px 24px 16px;
+        margin-bottom: 10px;
+    }
+
+    .payment__top {
+        margin-bottom: 6px;
+    }
+
+    .payment__top-title {
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: -0.2px;
+    }
 }

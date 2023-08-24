@@ -4,10 +4,34 @@
     .total {
         width: 100%;
         background: none;
+        padding: 16px;
+        padding: 16px 16px 40px 16px;
+    }
+
+    .total__item-return {
+        margin-bottom: 16px;
     }
 
     .total__item-return, .total__item-time {
         background: var(--smoky-dark);
+    }
+
+    .total__price-row--sum .price__text {
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: -0.2px;
+    }
+
+    .total__item--delivery .total__item-top, .total__item--delivery .total__item-info {
+        display: none;
+    }
+
+    .total__price {
+        margin-bottom: 15px;
+    }
+
+    .total__item--card .total__item-top, .total__item--card .total__item-card {
+        display: none;
     }
 
 }

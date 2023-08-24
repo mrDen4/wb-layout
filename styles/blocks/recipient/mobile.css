@@ -1,7 +1,19 @@
 /* Mobile */
 
 @media (width < 1024px) {
+    .recipient {
+        padding: 16px 16px 0 16px;
+    }
+
+    .recipient__title {
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: -0.2px;
+        margin-bottom: 25px;
+    }
+
     .recipient__form-inp {
         width: 100%;
+        margin-bottom: 46px;
     }
 }

@@ -2,6 +2,7 @@
 
 @media (width < 1024px) {
     .product {
+        flex-direction: row;
         flex-wrap: wrap;
         position: relative;
         margin-bottom: 9px;
@@ -71,7 +72,7 @@
 
     .product__text-size {
         position: absolute;
-        bottom: 4px;
+        bottom: 6px;
         left: 4px;
         background: var(--white);
         font-size: 14px;
@@ -103,8 +104,8 @@
         padding: 3px 8px;
     }
 
-    .goods__products--missing .product {
-        margin-bottom: 16px;
+    .goods__products--missing {
+        margin-bottom: 15px;
     }
 
     .goods__products--missing .product__info {
@@ -112,7 +113,7 @@
     }
 
     .goods__products--missing .product {
-        margin-bottom: 25px;
+        margin-bottom: 17px;
     }
 
     .goods__products--missing .product__action {

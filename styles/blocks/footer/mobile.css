@@ -1,5 +1,15 @@
 /* Mobile */
 
 @media (width < 1024px) {
-    
+    .footer {
+        padding-bottom: 64px;
+    }
+
+    .footer__container {
+        padding: 24px 0;
+    }
+
+    .footer__text {
+        margin: 0;
+    }
 }

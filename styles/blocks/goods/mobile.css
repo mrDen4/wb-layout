@@ -1,6 +1,10 @@
 /* Mobile */
 
 @media (width < 1024px) {
+    .goods {
+        padding: 0 16px; 
+    }
+
     .goods__accordion {
         margin-bottom: 17px;
     }
