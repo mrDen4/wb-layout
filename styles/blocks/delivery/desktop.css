@@ -29,4 +29,12 @@
     .delivery__return-text-green:hover .delivery__return-text-info {
         display: flex;
     }
+
+    .delivery__top-change {
+        cursor: pointer;
+    }
+
+    .delivery__top-change:hover {
+        opacity: .6;
+    }
 }

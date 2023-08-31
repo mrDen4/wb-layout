@@ -28,4 +28,8 @@
     .total__return-text-green:hover + .total__return-text-info {
         display: flex;
     }
+
+    .total__order:hover, .total__top-change:hover {
+        opacity: .6;
+    }
 }

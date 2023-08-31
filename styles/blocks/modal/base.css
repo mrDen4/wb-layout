@@ -1,0 +1,125 @@
+.modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background: rgba(5, 0, 10, 0.30);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__window {
+    min-width: 400px;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border-radius: 16px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.20);
+    padding: 24px 16px;
+}
+
+.modal__top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 13px;
+}
+
+.modal__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+}
+
+.modal__exit {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.modal__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.modal__content-title {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.modal__radio {
+    margin-bottom: 20px;
+}
+
+.modal__radio:last-child {
+    margin-bottom: 57px;
+}
+
+.modal__content .modal__radio {
+    padding-left: 18px;
+}
+
+.modal__radio-icon {
+    background: var(--smoky);
+    border-radius: 4px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 0;
+    margin-right: 4px;
+}
+
+.radio__delete {
+    border: none;
+    background: none;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.modal__enter {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.08);
+    background: var(--magenta);
+    padding: 12px 48px;
+}
+
+.modal--delivery .modal__window {
+    width: 500px;
+}
+
+.modal--delivery .modal__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.modal--delivery .modal__radio-border {
+    width: 48%;
+}
+
+.modal--delivery .modal__content-address {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal--delivery .modal__content-address .modal__radio svg:hover path {
+    fill: var(--orange);
+}
+
+.modal-active {
+    display: flex;
+}

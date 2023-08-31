@@ -14,6 +14,14 @@
 
     .recipient__form-inp {
         width: 100%;
+    }
+
+    .recipient__form-row {
+        flex-direction: column;
+    }
+
+    .recipient__form-row .recipient__form-label {
+        width: 100%;
         margin-bottom: 46px;
     }
 }

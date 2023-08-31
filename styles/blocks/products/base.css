@@ -6,3 +6,6 @@
     margin: 0 0 25px 0;
 }
 
+.goods__products--hide {
+    display: none;
+}

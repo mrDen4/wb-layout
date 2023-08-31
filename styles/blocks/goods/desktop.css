@@ -1,5 +1,11 @@
 /* Desktop */
 
 @media (width >= 1024px) {
+    .goods__hide-btn {
+        cursor: pointer;
+    }
 
+    .goods__hide-btn:hover {
+        opacity: .6;
+    }
 }

@@ -127,4 +127,8 @@
     .product__total-price:hover + .product__total-modal{
         display: flex;
     }
+
+    .product__action-count {
+        width: 100px;
+    }
 }

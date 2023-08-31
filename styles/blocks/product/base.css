@@ -22,6 +22,7 @@
     display: flex;
     width: calc(100% - 37px - 100px - 120px);
     align-items: flex-start;
+    position: relative;
 }
 
 .product__info-img {
@@ -90,6 +91,12 @@
     font-weight: 400;
     line-height: 24px;
     padding: 8px 0;
+    border: none;
+    width: 45px;
+    text-align: center;
+    color: var(--black);
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .product__action-count-btn {
@@ -170,6 +177,7 @@
 
 .goods__products--missing .product__info {
     margin-right: 33px;
+    position: relative;
 }
 
 .goods__products--missing .product__info-about {

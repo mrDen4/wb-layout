@@ -17,3 +17,6 @@
 @import url(./blocks/recipient/index.css);
 @import url(./blocks/footer/index.css);
 @import url(./blocks/tab-bar/index.css);
+@import url(./blocks/modal/index.css);
+@import url(./blocks/radio/index.css);
+@import url(./blocks/radio-border/index.css);

@@ -1,11 +1,12 @@
 /* Desktop */
 
 @media (width >= 1024px) {
-    .payment__top-change {
+    .modal__exit, .modal__enter {
         cursor: pointer;
     }
 
-    .payment__top-change:hover {
+    .modal__exit:hover, .modal__enter:hover {
         opacity: .6;
     }
+
 }
