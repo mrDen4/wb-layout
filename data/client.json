@@ -1,0 +1,55 @@
+{
+    "addressDelivery": {
+        "pickup": [
+            {
+                "address": "Бишкек, улица Табышалиева, 57",
+                "rating": "4,99",
+                "openningHours": "Ежедневно с 10 до 21",
+                "checked": true
+            },
+            {
+                "address": "Бишкек, улица Жукеева-Пудовкина, 77/1",
+                "rating": "4,50",
+                "openningHours": "Ежедневно с 10 до 21",
+                "checked": false
+            },
+            {
+                "address": "Бишкек, микрорайон Джал, улица Ахунбаева Исы, 67/1",
+                "rating": "5",
+                "openningHours": "Ежедневно с 10 до 21",
+                "checked": false
+            }
+        ],
+        "courier": [
+            "Бишкек, улица Табышалиева, 55, эт. 10, кв. 5",
+            "Бишкек, улица Жукеева-Пудовкина, 55, эт. 10, кв. 5",
+            "Бишкек, микрорайон Джал, улица Ахунбаева Исы, 67/1, 55, эт. 10, кв. 5"
+        ]
+    },
+    "creditCards": [
+        {
+            "number": "1234 56•• •••• 1234",
+            "date": "01/30",
+            "type": "mir",
+            "checked": true
+        },
+        {
+            "number": "1234 56•• •••• 1234",
+            "date": "01/30",
+            "type": "visa",
+            "checked": false
+        },
+        {
+            "number": "1234 56•• •••• 1234",
+            "date": "01/30",
+            "type": "masterCard",
+            "checked": false
+        },
+        {
+            "number": "1234 56•• •••• 1234",
+            "date": "01/30",
+            "type": "maestro",
+            "checked": false
+        }
+    ]
+}

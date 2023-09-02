@@ -1,0 +1,94 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "img": "/images/products/1.jpg",
+            "title": "Футболка UZcotton мужская",
+            "color": "белый",
+            "size": "56",
+            "company": "Коледино WB",
+            "titleCompany": "OOO Вайлдберриз",
+            "ogrnCompany": "5167746237148",
+            "addressCompany": "129337, Москва, улица Красная Сосна, 2, корпус 1, стр. 1, помещение 2, офис 34",
+            "checked": true,
+            "count": 1,
+            "productsLeft": 2,
+            "price": 1051,
+            "salePrice": 522
+        },
+        {
+            "id": 2,
+            "img": "/images/products/2.jpg",
+            "title": "Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe",
+            "color": "прозрачный",
+            "company": "Коледино WB",
+            "titleCompany": "OOO Мегапрофстиль",
+            "ogrnCompany": "5167746237148",
+            "addressCompany": "129337, Москва, улица Красная Сосна, 2, корпус 1, стр. 1, помещение 2, офис 34",
+            "checked": false,
+            "productsLeft": 2001,
+            "count": 200,
+            "price": 11500,
+            "salePrice": 10500
+        },
+        {
+            "id": 3,
+            "img": "/images/products/3.jpg",
+            "title": "Карандаши цветные Faber-Castell 'Замок', набор 24 цвета, заточенные, шестигранные,Faber-Castell ",
+            "company": "Коледино WB",
+            "titleCompany": "OOO Вайлдберриз",
+            "ogrnCompany": "5167746237148",
+            "addressCompany": "129337, Москва, улица Красная Сосна, 2, корпус 1, стр. 1, помещение 2, офис 34",
+            "checked": false,
+            "count": 2,
+            "productsLeft": 2,
+            "price": 475,
+            "salePrice": 247
+        },
+        {
+            "id": 4,
+            "img": "/images/products/1.jpg",
+            "title": "Карандаши цветные Faber-Castell 'Замок', набор 24 цвета, заточенные, шестигранные,Faber-Castell ",
+            "company": "Коледино WB",
+            "titleCompany": "OOO Вайлдберриз",
+            "ogrnCompany": "5167746237148",
+            "addressCompany": "129337, Москва, улица Красная Сосна, 2, корпус 1, стр. 1, помещение 2, офис 34",
+            "checked": false,
+            "count": 2,
+            "productsLeft": 0,
+            "price": 475,
+            "salePrice": 247
+        },
+        {
+            "id": 5,
+            "img": "/images/products/2.jpg",
+            "title": "Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe",
+            "color": "прозрачный",
+            "company": "Коледино WB",
+            "titleCompany": "OOO Мегапрофстиль",
+            "ogrnCompany": "5167746237148",
+            "addressCompany": "129337, Москва, улица Красная Сосна, 2, корпус 1, стр. 1, помещение 2, офис 34",
+            "checked": false,
+            "productsLeft": 0,
+            "count": 200,
+            "price": 11500,
+            "salePrice": 10500
+        },
+        {
+            "id": 6,
+            "img": "/images/products/3.jpg",
+            "title": "Карандаши цветные Faber-Castell 'Замок', набор 24 цвета, заточенные, шестигранные,Faber-Castell ",
+            "company": "Коледино WB",
+            "titleCompany": "OOO Вайлдберриз",
+            "ogrnCompany": "5167746237148",
+            "addressCompany": "129337, Москва, улица Красная Сосна, 2, корпус 1, стр. 1, помещение 2, офис 34",
+            "checked": false,
+            "count": 2,
+            "productsLeft": 0,
+            "price": 475,
+            "salePrice": 247
+        }
+        
+    ]
+    
+}
