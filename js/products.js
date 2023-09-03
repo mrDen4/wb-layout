@@ -87,6 +87,13 @@ let generateProduct = (product) => {
             return `<input type="checkbox" class="check__input">`
         }
     }
+    let productTotal = () => {
+        if (totalSalePrice >= 1000000) {
+            return `<p class="product__total-price-sale product__total-price-sale--big">${numberWithSpacing(totalSalePrice)} <span>сом</span></p>`
+        } else {
+            return `<p class="product__total-price-sale">${numberWithSpacing(totalSalePrice)} <span>сом</span></p>`
+        }
+    }
     let totalSalePrice = product.salePrice * product.count;
     let totalPrice = product.price * product.count;
     return `
@@ -117,8 +124,8 @@ let generateProduct = (product) => {
                         </svg>
                         <div class="product__company-modal">
                             <h3 class="product__company-modal-title">${product.titleCompany}</h3>
-                            <p class="product__company-modal-text">ОГРН: ${product.ogrn}</p>
-                            <p class="product__company-modal-text">${product.address}</p>
+                            <p class="product__company-modal-text">ОГРН: ${product.ogrnCompany}</p>
+                            <p class="product__company-modal-text">${product.addressCompany}</p>
                         </div>
                     </div>
                 </div>
@@ -148,7 +155,7 @@ let generateProduct = (product) => {
                 </div>
             </div>
             <div class="product__total">
-                <p class="product__total-price-sale">${numberWithSpacing(totalSalePrice)} <span>сом</span></p>
+                ${productTotal()}
                 <p class="product__total-price">${numberWithSpacing(totalPrice)} сом</p>
                 <div class="product__total-modal">
                     <div class="product__total-modal-row">
@@ -257,6 +264,8 @@ let addEventsForProducts = () => {
                     }
 
                     sumTotal();
+                    addProductsDelivery(allProducts);
+                    changeTotalBtn();
                 }
             })
     
@@ -294,6 +303,8 @@ let addEventsForProducts = () => {
                         }
 
                         sumTotal();
+                        addProductsDelivery(allProducts);
+                        changeTotalBtn();
                     }
                 })
     
@@ -319,7 +330,7 @@ let addEventsForProducts = () => {
             allProducts.forEach((item) => {
                 if (item.id == productId) {
                     if (value <= item.productsLeft && value > 0) {
-                        item.count = value
+                        item.count = +value
                         let price = item.price * item.count;
                         let salePrice = item.salePrice * item.count;
     
@@ -328,6 +339,8 @@ let addEventsForProducts = () => {
 
                         if (checkbox.checked) {
                             sumTotal(price, salePrice)
+                            addProductsDelivery(allProducts);
+                            changeTotalBtn();
                         }
                     } else {
                         e.target.value = item.count
@@ -352,6 +365,8 @@ let addEventsForProducts = () => {
                 })
 
                 sumTotal()
+                addProductsDelivery(allProducts);
+                changeTotalBtn();
             } else {
                 allProducts.forEach((item) => {
                     if (item.id == productId) {
@@ -360,9 +375,24 @@ let addEventsForProducts = () => {
                 })
 
                 sumTotal()
+                addProductsDelivery(allProducts);
+                changeTotalBtn();
             }
             
         })
+    })
+}
+
+let changeTotalBtn = () => {
+    let totalCheckboxInput = document.querySelector('.total .total__item-time .check__input');
+    let totalOrderBtn = document.querySelector('.total .total__order');
+
+    totalCheckboxInput.addEventListener('change', (e) => {
+        if (e.target.checked) {
+            totalOrderBtn.innerHTML = `${numberWithSpacing(totalSalePrice)} сом`
+        } else {
+            totalOrderBtn.innerHTML = 'Заказать'
+        }
     })
 }
 
@@ -371,7 +401,8 @@ let getAllProducts = () => {
     .then(res => res.json())
     .then(data => parseProducts(data.products))
     .then(() => addEventsForProducts())
-    .then(() => sumTotal());
+    .then(() => sumTotal())
+    .then(() => changeTotalBtn())
 }
 
 getAllProducts();

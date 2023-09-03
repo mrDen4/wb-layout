@@ -90,9 +90,10 @@
     margin: 0;
 }
 
-.total__return-text span {
+.total__return-text-green {
     color: var(--green);
     border-bottom: 1px dotted rgba(12, 180, 119, 0.20);
+    cursor: pointer;
 }
 
 .total__return-text-info {

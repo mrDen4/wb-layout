@@ -35,9 +35,10 @@
 .payment__about {
     display: flex;
     margin-bottom: 8px;
+    align-items: center;
 }
 
-.payment__about img {
+.payment__about svg {
     width: 30px;
     margin-right: 9px;
 }

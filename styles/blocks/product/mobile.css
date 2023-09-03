@@ -85,19 +85,25 @@
         display: none;
     }
 
+    .product__price {
+        width: 100%;
+    }
+
     .product__action {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        margin-right: 0;
     }
 
     .product__action-count {
-        width: 81px;
+        width: initial;
     }
 
     .product__action-count-text {
         padding: 3px 0;
+        width: 32px;
     }
 
     .product__action-count-btn {

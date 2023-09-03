@@ -26,10 +26,18 @@
 
     .goods__products--missing .product__action {
         justify-content: start;
+        width: 210px;
     }
 
     .goods__products--missing .product__action-btn:hover svg path {
         fill: var(--magenta);
+    }
+
+    .goods__products--missing .product__action {
+        margin-right: 0;
+        align-items: start;
+        justify-content: start;
+        margin-left: auto;
     }
 
     .product__company-row {

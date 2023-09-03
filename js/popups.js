@@ -14,36 +14,33 @@ let buttonsChangeDelivery = [buttonChangeDeliveryContent, buttonChangeDeliveryTo
 buttonsChangePay.forEach((item) => {
     item.addEventListener('click', (e) => {
         e.preventDefault();
-        modalPay.classList.toggle('modal-active');
+        modalPay.classList.add('modal-active');
     })
 });
 
 buttonsChangeDelivery.forEach((item) => {
     item.addEventListener('click', (e) => {
         e.preventDefault();
-        modalDelivery.classList.toggle('modal-active');
+        modalDelivery.classList.add('modal-active');
     })
 });
 
 modal.forEach((item) => {
+    let buttonModalExit = item.querySelector('.modal__exit');
+    let modal = item;
+    let enter = item.querySelector('.modal__enter');
     item.addEventListener('click', (e) => {
-        let buttonModalExit = e.currentTarget.querySelector('.modal__exit');
-        let modal = e.currentTarget;
-        let enter = e.currentTarget.querySelector('.modal__enter');
-
-
-        enter.addEventListener('click', (e) => {
-            modal.classList.remove('modal-active')
-            e.preventDefault();
-        })
-
-        buttonModalExit.addEventListener('click', (e) => {
-            modal.classList.remove('modal-active')
-            e.preventDefault();
-        })
-
         if (e.target.classList.contains('modal-active')) {
             e.target.classList.remove('modal-active')
         }
+    })
+    enter.addEventListener('click', (e) => {
+        modal.classList.remove('modal-active')
+        e.preventDefault();
+    })
+
+    buttonModalExit.addEventListener('click', (e) => {
+        modal.classList.remove('modal-active')
+        e.preventDefault();
     })
 })

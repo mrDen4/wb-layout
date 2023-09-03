@@ -13,3 +13,9 @@
         max-width: 105px;
     }
 }
+
+@media (width >= 1400px) {
+    .header__container {
+        max-width: 1400px;
+    }
+}

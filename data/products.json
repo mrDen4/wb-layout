@@ -13,6 +13,12 @@
             "checked": true,
             "count": 1,
             "productsLeft": 2,
+            "productsToOrder": [
+                {
+                    "date": "5 - 6 февраля",
+                    "count": 2
+                }
+            ],
             "price": 1051,
             "salePrice": 522
         },
@@ -26,7 +32,17 @@
             "ogrnCompany": "5167746237148",
             "addressCompany": "129337, Москва, улица Красная Сосна, 2, корпус 1, стр. 1, помещение 2, офис 34",
             "checked": false,
-            "productsLeft": 2001,
+            "productsLeft": 300,
+            "productsToOrder": [
+                {
+                    "date": "5 - 6 февраля",
+                    "count": 184
+                },
+                {
+                    "date": "7 - 8 февраля",
+                    "count": 116
+                }
+            ],
             "count": 200,
             "price": 11500,
             "salePrice": 10500
@@ -42,6 +58,12 @@
             "checked": false,
             "count": 2,
             "productsLeft": 2,
+            "productsToOrder": [
+                {
+                    "date": "5 - 6 февраля",
+                    "count": 2
+                }
+            ],
             "price": 475,
             "salePrice": 247
         },
@@ -56,6 +78,7 @@
             "checked": false,
             "count": 2,
             "productsLeft": 0,
+            "productsToOrder": [],
             "price": 475,
             "salePrice": 247
         },
@@ -70,6 +93,7 @@
             "addressCompany": "129337, Москва, улица Красная Сосна, 2, корпус 1, стр. 1, помещение 2, офис 34",
             "checked": false,
             "productsLeft": 0,
+            "productsToOrder": [],
             "count": 200,
             "price": 11500,
             "salePrice": 10500
@@ -85,6 +109,7 @@
             "checked": false,
             "count": 2,
             "productsLeft": 0,
+            "productsToOrder": [],
             "price": 475,
             "salePrice": 247
         }
