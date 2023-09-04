@@ -1,6 +1,6 @@
 @import url(./global/box-model.css);
 @import url(./colors.css);
-@import url(/fonts/stylesheet.css);
+@import url(../fonts/stylesheet.css);
 
 /* Blocks */
 @import url(./blocks/page/index.css);

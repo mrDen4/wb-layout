@@ -2,7 +2,7 @@
     "products": [
         {
             "id": 1,
-            "img": "/images/products/1.jpg",
+            "img": "./images/products/1.jpg",
             "title": "Футболка UZcotton мужская",
             "color": "белый",
             "size": "56",
@@ -24,7 +24,7 @@
         },
         {
             "id": 2,
-            "img": "/images/products/2.jpg",
+            "img": "./images/products/2.jpg",
             "title": "Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe",
             "color": "прозрачный",
             "company": "Коледино WB",
@@ -49,7 +49,7 @@
         },
         {
             "id": 3,
-            "img": "/images/products/3.jpg",
+            "img": "./images/products/3.jpg",
             "title": "Карандаши цветные Faber-Castell 'Замок', набор 24 цвета, заточенные, шестигранные,Faber-Castell ",
             "company": "Коледино WB",
             "titleCompany": "OOO Вайлдберриз",
@@ -69,7 +69,7 @@
         },
         {
             "id": 4,
-            "img": "/images/products/1.jpg",
+            "img": "./images/products/1.jpg",
             "title": "Карандаши цветные Faber-Castell 'Замок', набор 24 цвета, заточенные, шестигранные,Faber-Castell ",
             "company": "Коледино WB",
             "titleCompany": "OOO Вайлдберриз",
@@ -84,7 +84,7 @@
         },
         {
             "id": 5,
-            "img": "/images/products/2.jpg",
+            "img": "./images/products/2.jpg",
             "title": "Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe",
             "color": "прозрачный",
             "company": "Коледино WB",
@@ -100,7 +100,7 @@
         },
         {
             "id": 6,
-            "img": "/images/products/3.jpg",
+            "img": "./images/products/3.jpg",
             "title": "Карандаши цветные Faber-Castell 'Замок', набор 24 цвета, заточенные, шестигранные,Faber-Castell ",
             "company": "Коледино WB",
             "titleCompany": "OOO Вайлдберриз",
